@@ -1,4 +1,4 @@
-#2 Sum Brute Force Solution(Nested Loops)
+# 2 Sum Brute Force Solution (Nested Loops)
 
 class Solution(object):
     def twoSum(self, nums, target):
@@ -7,3 +7,12 @@ class Solution(object):
             for j in range(i + 1, len(nums)):
                 if nums[i] + nums[j] == target:
                     return [i, j]
+
+
+# Test the solution
+
+solution = Solution()
+
+result = solution.twoSum([2, 7, 11, 15], 9)
+
+print(result)
